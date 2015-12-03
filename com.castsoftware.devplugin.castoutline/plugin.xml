@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension-point id="com.castsoftware.devplugin.castoutline.CASTOutlineView" name="CASTOutlineView" schema="schema/com.castsoftware.devplugin.castoutline.CASTOutlineView.exsd"/>
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            name="CAST"
+            id="com.castsoftware.devplugin">
+      </category>
+      <view
+            allowMultiple="false"
+            category="com.castsoftware.devplugin"
+            class="com.castsoftware.devplugin.castoutline.CASTOutlineView"
+            icon="icons/CASTOutline.png"
+            id="com.castsoftware.devplugin.castoutline.CASTOutlineView"
+            name="CAST Outline View">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="org.eclipse.jdt.ui.JavaPerspective">
+         <view
+               id="com.castsoftware.devplugin.castoutline.CASTOutlineView"
+               ratio="0.75"
+               relationship="bottom"
+               relative="org.eclipse.jdt.ui.PackageExplorer"
+               visible="true">
+         </view>
+      </perspectiveExtension>
+   </extension>
+
+</plugin>

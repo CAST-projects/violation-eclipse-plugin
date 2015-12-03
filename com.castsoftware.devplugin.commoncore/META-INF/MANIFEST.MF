@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Common Core Plug-in
+Bundle-SymbolicName: com.castsoftware.devplugin.commoncore
+Bundle-Version: 7.0.22.qualifier
+Bundle-Activator: com.castsoftware.devplugin.commoncore.Activator
+Bundle-Vendor: CASTSOFTWARE
+Require-Bundle: org.eclipse.core.runtime
+Eclipse-LazyStart: true
+Export-Package: com.castsoftware.devplugin.commoncore;uses:="org.osgi.framework,org.eclipse.core.runtime"

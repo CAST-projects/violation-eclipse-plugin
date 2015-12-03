@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="CAST">
+	<topic label="CAST Plug-in for Eclipse" href="html/index.html">
+		<topic href="html/intro/index.html"
+			label="Introduction to the CAST Plug-in for Eclipse">
+			<topic href="html/intro/whatisit.html"
+				label="What is the CAST Plug-in for Eclipse?">
+			</topic>
+   <topic href="html/intro/requirements.html" label="Environment Requirements">
+   </topic>
+   <topic href="html/intro/delivery.html" label="Product Delivery">
+   </topic>
+		</topic>
+		<topic href="html/install/index.html"
+			label="Installing and configuring the CAST Plug-in for Eclipse">
+     <topic href="html/install/webservice.html" label="Web Service installation and configuration">
+     </topic>
+     <topic href="html/install/download34.html" label="Plug-in installation for Eclipse 3.4.x">
+     </topic>
+     <topic href="html/install/download35.html" label="Plug-in installation for Eclipse 3.5.x and 3.6.x">
+     </topic>
+			<topic href="html/install/config/index.html"
+				label="Plug-in configuration">
+				<topic href="html/install/config/preferences.html"
+					label="Preferences">
+				</topic>
+				<topic href="html/install/config/display_views.html"
+					label="Display the CAST Plug-in views">
+				</topic>
+			</topic>
+		</topic>
+		<topic href="html/using/index.html"
+			label="Using the CAST Plug-in for Eclipse">
+			<topic href="html/using/select_applications.html"
+				label="How to select the Applications/Modules and Technologies">
+			</topic>
+			<topic href="html/using/manually_fetch.html"
+				label="How to manually fetch the violations">
+			</topic>
+			<topic href="html/using/views/index.html"
+				label="How each view functions">
+				<topic href="html/using/views/violation.html"
+					label="CAST Violation List">
+				</topic>
+				<topic href="html/using/views/outline.html"
+					label="CAST Outline View">
+				</topic>
+				<topic href="html/using/views/browser.html"
+					label="CAST Browser">
+				</topic>
+				<topic href="html/using/views/matching_artifacts.html"
+					label="CAST Matching Artifacts">
+				</topic>
+    <topic href="html/using/views/tree_view.html" label="Diagnostic Tree View">
+    </topic>
+			</topic>
+		</topic>
+  <topic href="html/contact.html" label="Contacting CAST - Office Locations">
+  </topic>
+		<topic href="html/copyright.html" label="Copyright Notice">
+		</topic>
+	</topic>
+</toc>

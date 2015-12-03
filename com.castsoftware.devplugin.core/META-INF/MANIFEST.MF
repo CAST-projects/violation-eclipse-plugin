@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Core Plug-in
+Bundle-SymbolicName: com.castsoftware.devplugin.core;singleton:=true
+Bundle-Version: 7.0.22.qualifier
+Bundle-Activator: com.castsoftware.devplugin.core.Activator
+Bundle-Vendor: CAST
+Require-Bundle: org.eclipse.core.runtime,
+ com.castsoftware.devplugin.commoncore,
+ org.eclipse.osgi.services,
+ org.eclipse.osgi.util
+Eclipse-LazyStart: true
+Bundle-ClassPath: .,
+ jars/activation-1.1.1.jar,
+ jars/stax-api-1.0-2.jar,
+ jars/org.dynamicjava.jaxb-api-2.1.jar,
+ jars/jaxb-impl.jar,
+ jars/jaxb2-basics-runtime-0.5.2.jar,
+ jars/ds-entity-1.0-SNAPSHOT.jar,
+ jars/commons-lang-2.2.jar
+Export-Package: com.castsoftware.devplugin.core.model;
+  uses:="com.castsoftware.devplugin.commoncore,
+   com.castsoftware.devplugin.core.provider,
+   com.castsoftware.ds.entity,
+   javax.xml.bind",
+ com.castsoftware.devplugin.core.provider;uses:="com.castsoftware.devplugin.core.model",
+ com.castsoftware.ds.entity

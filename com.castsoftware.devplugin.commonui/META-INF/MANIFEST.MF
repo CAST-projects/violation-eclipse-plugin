@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Common UI Plug-in
+Bundle-SymbolicName: com.castsoftware.devplugin.commonui;singleton:=true
+Bundle-Version: 7.0.22.qualifier
+Bundle-Activator: com.castsoftware.devplugin.commonui.Activator
+Bundle-Vendor: CASTSOFTWARE
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ com.castsoftware.devplugin.commoncore,
+ com.castsoftware.devplugin.core
+Eclipse-LazyStart: true
+Export-Package: com.castsoftware.devplugin.commonui

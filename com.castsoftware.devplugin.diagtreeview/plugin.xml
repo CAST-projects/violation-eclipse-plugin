@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            id="com.castsoftware.devplugin"
+            name="CAST">
+      </category>
+      <view
+            category="com.castsoftware.devplugin"
+            class="com.castsoftware.devplugin.diagtreeview.DiagTreeView"
+            id="com.castsoftware.devplugin.diagtreeview.DiagTreeView"
+            name="Diagnostic Tree View">
+      </view>
+   </extension>
+
+</plugin>

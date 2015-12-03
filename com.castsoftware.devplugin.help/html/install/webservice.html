@@ -1,0 +1,165 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="StyleSheet" type="text/css" href="../../css/cast.css">
+<title>Web Service installation and configuration</title>
+</head>
+
+<body>
+
+<h4>Web Service installation and configuration</h4>
+<hr>
+
+<p>This chapter describes how to install the web service that ensures the 
+communication between the CAST Plug-in for Eclipse and the CAST Dashboard 
+Service. Note 
+that:</p>
+
+<ul>
+  <li>The chapter assumes that you already have a <b>functioning J2EE compliant 
+  application server</b> (such as Apache Tomcat)</li>
+  <li>The chapter is aimed at installing the web service on an <b>Apache Tomcat</b> 
+  J2EE complication application server (other servers are supported - please see 
+  the Release Notes)</li>
+</ul>
+
+<h5>Delivery</h5>
+
+<p>The web service is shipped in the form of a <b>.WAR </b>file (called <b>
+CASTWS.war</b>) that is delivered as part of the CAST AIP suite: you can find 
+the .WAR file in the root of the CAST installation folder in a folder called <b>
+AD_plugin</b>. The .WAR is also supplied directly from CAST’s Product Center.</p>
+
+<p>The next step involves deploying the file on your J2EE compliant application 
+server.</p>
+
+<h5>.WAR file deployment</h5>
+
+<p>To deploy the .WAR file on Apache Tomcat, you first need to locate the .WAR 
+file and move it to the web application installation location. By default on 
+Apache Tomcat 6.0 this is set 
+to:</p>
+<pre>%CATALINA_HOME%\webapps\</pre>
+<p>If the Apache Tomcat server is running, 
+the file will then be automatically unpacked and deployed into a folder called:</p>
+<pre>%CATALINA_HOME%\webapps\CASTWS</pre>
+<p>You now need to configure the <b>web.xml </b>file to ensure that a connection 
+is made to the CAST Dashboard Service.</p>
+
+<h5>web.xml configuration</h5>
+
+<p>Before you can use the CAST Plug-in for 
+Eclipse, you need to configure the <b>web.xml </b>file. To do so, open the 
+following file with a text editor:</p>
+<pre>%CATALINA_HOME%\webapps\CASTWS\WEB-INF\web.xml</pre>
+<p>By default, the web.xml file supplied by CAST will contain an uncommented 
+connection settings template for Dashboard Services hosted on the <b>CAST 
+Storage Service</b>:</p>
+
+<pre>&lt;!-- Template for CAST Storage Services --&gt;
+&lt;context-param&gt;
+   &lt;description&gt;JDBC driver&lt;/description&gt;
+   &lt;param-name&gt;jdbc.driver&lt;/param-name&gt;
+   &lt;param-value&gt;org.postgresql.Driver&lt;/param-value&gt;
+&lt;/context-param&gt;
+&lt;context-param&gt;
+   &lt;description&gt;JDBC sub protocol&lt;/description&gt;
+   &lt;param-name&gt;jdbc.subprotocol&lt;/param-name&gt;
+   &lt;param-value&gt;postgresql&lt;/param-value&gt;
+&lt;/context-param&gt;
+&lt;context-param&gt;
+   &lt;description&gt;JDBC database&lt;/description&gt;
+   &lt;param-name&gt;jdbc.database&lt;/param-name&gt;
+   &lt;param-value&gt;//localhost:2278/postgres&lt;/param-value&gt;
+&lt;/context-param&gt;
+&lt;context-param&gt;
+   &lt;description&gt;JDBC user&lt;/description&gt;
+   &lt;param-name&gt;jdbc.user&lt;/param-name&gt;
+   &lt;param-value&gt;operator&lt;/param-value&gt;
+&lt;/context-param&gt;
+&lt;context-param&gt;
+   &lt;description&gt;JDBC password&lt;/description&gt;
+   &lt;param-name&gt;jdbc.password&lt;/param-name&gt;
+   &lt;param-value&gt;CastAIP&lt;/param-value&gt;
+&lt;/context-param&gt;
+&lt;context-param&gt;
+   &lt;description&gt;JDBC Central database&lt;/description&gt;
+   &lt;param-name&gt;jdbc.schema&lt;/param-name&gt;
+   &lt;param-value&gt;[Dashboard Service schema]&lt;/param-value&gt;
+&lt;/context-param&gt;</pre>
+<p>This template is provided uncommented so that J2EE compliant application 
+server GUIs (part of the web application administration tool set) can directly 
+edit the connection information if required. </p>
+<p>If you prefer to edit the settings yourself, for the <b>CAST Storage Service</b>, 
+you need to modify the following settings to match your environment:</p>
+<pre>&lt;context-param&gt;
+   &lt;description&gt;JDBC database&lt;/description&gt;
+   &lt;param-name&gt;jdbc.database&lt;/param-name&gt;
+   &lt;param-value&gt;<font color="#FF0000">//localhost:2278/postgres</font>&lt;/param-value&gt;
+&lt;/context-param&gt;
+
+&lt;context-param&gt;
+   &lt;description&gt;JDBC Central database&lt;/description&gt;
+   &lt;param-name&gt;jdbc.schema&lt;/param-name&gt;
+   &lt;param-value&gt;<font color="#FF0000">[Dashboard Service schema]</font>&lt;/param-value&gt;
+&lt;/context-param&gt;</pre>
+<p>If you are working in a <b>Microsoft SQL Server</b> or <b>Oracle Server</b> environment, you need to:</p>
+<ul>
+  <li>Comment the <b>CAST Storage Service</b> connection settings by adding <b>&lt;!--</b> and <b>
+  --&gt;</b> around the template section</li>
+  <li>Uncomment the <b>Microsoft SQL Server</b> or <b>Oracle Server</b> connection settings you require by removing the <b>&lt;!--</b> 
+  and <b>--&gt;</b> from the specific template</li>
+  <li>Edit the required information (anything listed between square brackets 
+  must be changed)</li>
+</ul>
+<p>In all cases, following any changes you make, <b>save the web.xml </b>file 
+and then <b>restart </b>your J2EE compliant application server so that the changes are 
+taken into account.</p>
+<p><img border="0" src="../../images/note.gif" width="10" height="10"> <b>
+Notes</b></p>
+<ul>
+  <li>In <b>Oracle Server</b> environments, note that the fields<b> &lt;param-name&gt;jdbc.user&lt;/param-name&gt; </b>
+  and <b>&lt;param-name&gt;jdbc.schema&lt;/param-name&gt;</b> require the same 
+  input.</li>
+  <li>In <b>Microsoft SQL Server</b> environments, the field <b>&lt;param-name&gt;jdbc.schema&lt;/param-name&gt;</b> 
+  will be provided for the CAST Dashboard Service. As a result, any user ID/password 
+  combination with sufficient rights can be used.</li>
+  <li>In <b>Microsoft SQL Server</b> environments when using a default instance (as 
+  oppose to a named instance), it is not necessary to enter the instance name as 
+  shown below as [InstanceName] (if you do, the connection will fail). As such, 
+  you can simply use the IP address or DNS name to gain access:</ul>
+<pre>&lt;context-param&gt;
+	&lt;param-name&gt;jdbc.database&lt;/param-name&gt;
+	&lt;param-value&gt;//[IPAddress]\[InstanceName]&lt;/param-value&gt;
+	&lt;description&gt;JDBC database&lt;/description&gt;
+&lt;/context-param&gt;</pre>
+<h5>Test the connection</h5>
+<p>Once you have installed, configured and restarted your J2EE compliant 
+application server, please test that it is functioning correctly. To do so, 
+browse to:</p>
+<ul>
+  <li><b>http://&lt;server&gt;:8080/CASTWS</b> (change &lt;server&gt; to reflect the DNS 
+  name of the server hosting your J2EE compliant application server).</li>
+</ul>
+<p>A successful installation and configuration will result in the display of a 
+web page containing a link to <b>&quot;Test Portfolio tree&quot;</b> – clicking this 
+should display an XML file in your browser containing information about the 
+contents of your CAST Dashboard Service (Delivery Units, Systems, Applications 
+and Snapshots).</p>
+<p>Usually the most common cause for an unsuccessful test is incorrect settings 
+in the <b>web.xml</b> file. Check in particular that the <b>&lt;param-name&gt;jdbc.schema&lt;/param-name&gt; </b>
+is defined correctly.</p>
+<h5>Configure the CAST Plug-in for Eclipse</h5>
+<p>The last step is to input the URL of the web service (<b>http://&lt;server&gt;:8080/CASTWS</b>) 
+into the CAST <b>Preferences page</b> in Eclipse. See
+<a href="config/preferences.html">Preferences</a> for more information.</p>
+
+<hr>
+
+<p align="right"><a href="http://www.castsoftware.com" target="_blank">
+<img border="0" src="../../images/cast.gif" alt="CAST Website" width="174" height="21"></a></p>
+
+</body>
+</html>

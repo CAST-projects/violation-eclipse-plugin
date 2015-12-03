@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Querybytype Plug-in
+Bundle-SymbolicName: com.castsoftware.devplugin.querybytype;singleton:=true
+Bundle-Version: 7.0.22.qualifier
+Bundle-Activator: com.castsoftware.devplugin.querybytype.Activator
+Bundle-Vendor: CASTSOFTWARE
+Require-Bundle: com.castsoftware.devplugin.violationview,
+ com.castsoftware.devplugin.core,
+ org.eclipse.core.runtime,
+ org.eclipse.jface
+Eclipse-LazyStart: true
+Export-Package: com.castsoftware.devplugin.querybytype

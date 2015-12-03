@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: QueryPlugin Java Plug-in
+Bundle-SymbolicName: com.castsoftware.devplugin.querybytype.java;singleton:=true
+Bundle-Version: 7.0.22.qualifier
+Bundle-Activator: com.castsoftware.devplugin.querybytype.java.Activator
+Bundle-Vendor: CASTSOFTWARE
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ com.castsoftware.devplugin.querybytype,
+ org.eclipse.jdt.core,
+ org.eclipse.jdt.ui,
+ org.eclipse.core.resources,
+ org.eclipse.jface.text
+Eclipse-LazyStart: true

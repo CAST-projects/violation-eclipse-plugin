@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<project name="generateADGPlugin" basedir="." default="help">
+	<target name="init">
+		<property name="updatesite.target.dir" value="./com.castsoftware.devplugin.updatesite/target"/>
+	</target>
+
+	<target name="help">
+		<echo message="ADG Plugin build" />
+		<echo message="Parameters:" />
+		<echo message="Targets:" />
+		<echo message="  help                         - Display this message" />
+		<echo message="  genPluginSite                - modify the sources of the eclipse plugin to include the current version info" />
+		<echo message="  genPluginArchive             - generate the eclipse plugin update archive file" />
+	</target>	
+	
+	<target name="genPluginSite" depends="init">
+		
+		<exec executable="c:/apache-maven-3.0-alpha-7/bin/mvn.bat"
+		      dir="."
+			  failonerror="true">
+			<env key="M2_HOME" path="c:/apache-maven-3.0-alpha-7"/>
+			<env key="MAVEN_OPTS" value="-Xmx512m -XX:MaxPermSize=128m"/>
+			<arg value="clean"/>
+			<arg value="package"/>
+			<arg value="-Dtycho.targetPlatform=c:/eclipse3.6.1"/>
+		</exec>
+		
+		<delete file="${updatesite.target.dir}/update_site.zip"/>
+		
+		<zip destfile="${updatesite.target.dir}/update_site.zip">
+			<fileset dir="${updatesite.target.dir}/site"/>
+		</zip>
+	</target>
+
+	<target name="genPluginArchive" depends="genPluginSite">
+		<delete dir="${updatesite.target.dir}/tempsite"/>
+		<mkdir dir="${updatesite.target.dir}/tempsite"/>
+		
+		<zip destfile="${updatesite.target.dir}/tempsite/artifacts.jar">
+			<fileset dir="${updatesite.target.dir}/site">
+				<include name="artifacts.xml"/>
+			</fileset>
+		</zip>
+		<zip destfile="${updatesite.target.dir}/tempsite/content.jar">
+			<fileset dir="${updatesite.target.dir}/site">
+				<include name="content.xml"/>
+			</fileset>
+		</zip>
+
+		<delete file="${updatesite.target.dir}/update_site_archive.zip"/>
+		
+		<zip destfile="${updatesite.target.dir}/update_site_archive.zip">
+			<fileset dir="${updatesite.target.dir}/site">
+				<exclude name="artifacts.xml"/>
+				<exclude name="content.xml"/>
+			</fileset>
+			<fileset file="${updatesite.target.dir}/tempsite/artifacts.jar"/>
+			<fileset file="${updatesite.target.dir}/tempsite/content.jar"/>
+		</zip>
+	</target>
+	
+</project>

@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="StyleSheet" type="text/css" href="../../css/cast.css">
+<title>Environment Requirements</title>
+</head>
+
+<body>
+
+<h4>Environment Requirements</h4>
+<hr>
+
+<p>To use the CAST Plug-in for Eclipse the following requirements are necessary:</p>
+
+<h5>CAST</h5>
+
+<p>The plug-in is designed to function with the following versions of CAST:</p>
+
+<ul>
+  <li>6.4.x</li>
+  <li>7.0.x</li>
+</ul>
+
+<p>This means you should have a fully functioning CAST installation in one of 
+the supported versions. Please see the relevant CAST Installation Guide for more 
+information about the installation process for this version.</p>
+
+<p>You also need to have successfully worked through the process of populating 
+your CAST Dashboard Service (formerly known as the Central) with information 
+that can be accessed via the CAST Dashboard (i.e. have analyzed your source 
+code, generated a snapshot and added violations to the Action Plan in the CAST 
+Dashboard).</p>
+
+<h5>RDBMS</h5>
+
+<p>The plug-in functions on the following supported RDBMS (please see the 
+relevant CAST Release Notes to find out which RDBMS version is supported):</p>
+
+<table border="1" cellpadding="5" cellspacing="0" bordercolor="#111111" width="50%" bordercolorlight="#006699" bordercolordark="#FFFFFF">
+  <tr>
+    <td width="16%" bgcolor="#C0C0C0"><b>CAST version</b></td>
+    <td width="84%" bgcolor="#C0C0C0"><b>Supported RDBMS</b></td>
+  </tr>
+  <tr>
+    <td width="16%"><b>6.4.x</b></td>
+    <td width="84%">
+    <ul>
+      <li>Oracle Server</li>
+      <li>Microsoft SQL Server</li>
+    </ul>
+    </td>
+  </tr>
+  <tr>
+    <td width="16%"><b>7.0.x</b></td>
+    <td width="84%">
+    <ul>
+      <li>All supported RDBMS including the CAST Storage Service.</li>
+    </ul>
+    </td>
+  </tr>
+</table>
+
+<h5>Web Service</h5>
+
+<p>The CAST Plug-in for Eclipse interacts with the CAST Dashboard Service using a <b>web 
+service</b> installed on a J2EE compliant application server (such as Apache 
+Tomcat). As such, the web service must already be
+<a href="../install/webservice.html">installed and configured</a>.</p>
+
+<ul>
+      <li>For Oracle Server environments, when
+      <a href="../install/webservice.html">configuring</a> 
+      the web service, you need to specify the <b>schema</b>, <b>user ID</b> and <b>password</b> 
+      that correspond to the schema in which the CAST Dashboard Service has been installed.<li>
+  For Oracle Server environments, you must make sure that the user ID you 
+  specify when <a href="../install/webservice.html">configuring</a> the web service has the 
+  following rights/roles:<ul>
+  <li><b>Oracle 10g2</b> = ALTER SESSION. Note that this role is implicitly granted in 
+Oracle 10.2.0.1</li>
+  <li><b>Other Oracle versions</b> = CONNECT</li></ul>
+      <p>This is because the CAST Plug-in for Eclipse modifies the <b>Oracle Optimizer Mode</b> 
+      using the following query:<pre><b>alter session set optimizer_mode=ALL_ROWS</b></pre>
+</ul>
+
+<h5>J2EE compliant application server</h5>
+
+<p>The CAST Plug-in for Eclipse interacts heavily with the CAST  Dashboard and 
+a web service - both of which are installed on a J2EE compliant application 
+server (such as Apache Tomcat). 
+Please see the relevant CAST Release Notes to find out which 
+J2EE compliant application version is supported for <b>CAST 6.4.x</b> and <b>
+7.0.x</b>.</p>
+
+<h5>Eclipse</h5>
+
+<p>The plug-in is supported on:</p>
+
+<ul>
+  <li> <b>Eclipse 3.4</b></li>
+  <li><b>Eclipse 3.5</b></li>
+  <li><b>Eclipse 3.6</b></li>
+</ul>
+
+<p>You can download Eclipse for 
+free: <a href="http://www.eclipse.org/downloads/">http://www.eclipse.org/downloads/ </a>CAST recommends the <b>Eclipse IDE for Java EE Developers</b>, although the CAST plug-in will 
+work with other packages.</p>
+
+<hr>
+
+<p align="right"><a href="http://www.castsoftware.com" target="_blank">
+<img border="0" src="../../images/cast.gif" alt="CAST Website" width="174" height="21"></a></p>
+
+</body>
+</html>

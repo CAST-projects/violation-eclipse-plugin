@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.castsoftware.devplugin</groupId>
+  <artifactId>adg-plugin</artifactId>
+  <version>7.0.22-SNAPSHOT</version><!-- TO_BE_REPLACED_VERSION_MARKER -->
+  <packaging>pom</packaging>
+  <modules>
+    <module>com.castsoftware.devplugin.castbrowser</module>
+    <module>com.castsoftware.devplugin.castoutline</module>
+    <module>com.castsoftware.devplugin.cbprefpage</module>
+    <module>com.castsoftware.devplugin.codesearchselection</module>
+    <module>com.castsoftware.devplugin.commoncore</module>
+    <module>com.castsoftware.devplugin.commonui</module>
+    <module>com.castsoftware.devplugin.core</module>
+    <module>com.castsoftware.devplugin.diagtreeview</module>
+    <module>com.castsoftware.devplugin.help</module>
+    <module>com.castsoftware.devplugin.querybytype</module>
+    <module>com.castsoftware.devplugin.querybytype.java</module>
+    <module>com.castsoftware.devplugin.violationview</module>
+    <module>com.castsoftware.devplugin.violationview.outline</module>
+    <module>com.castsoftware.devplugin.feature.core</module>
+    <module>com.castsoftware.devplugin.feature.java</module>
+    <module>com.castsoftware.devplugin.updatesite</module>
+  </modules>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.sonatype.tycho</groupId>
+        <artifactId>tycho-maven-plugin</artifactId>
+        <version>0.8.0</version>
+        <extensions>true</extensions>
+      </plugin>
+	  <plugin>
+		  <groupId>org.sonatype.tycho</groupId>
+		  <artifactId>maven-osgi-compiler-plugin</artifactId>
+		  <version>0.8.0</version>
+		  <configuration>
+		    <source>1.5</source>
+		    <target>1.5</target>
+		    <testFailureIgnore>true</testFailureIgnore>
+		  </configuration>
+	  </plugin>
+    </plugins>
+  </build>
+</project>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="com.castsoftware.devplugin.querybytype">
+      <castobjecttype
+            class="com.castsoftware.devplugin.querybytype.java.JavaClass"
+            id="100" name="Java Class">
+      </castobjecttype>
+   </extension>
+   <extension
+         point="com.castsoftware.devplugin.querybytype">
+      <castobjecttype
+            class="com.castsoftware.devplugin.querybytype.java.JavaMethod"
+            id="102" name="Java Method">
+      </castobjecttype>
+   </extension>
+   <extension
+         point="com.castsoftware.devplugin.querybytype">
+      <castobjecttype
+            class="com.castsoftware.devplugin.querybytype.java.JavaInterface"
+            id="104" name="Java Interface">
+      </castobjecttype>
+   </extension>
+   <extension
+         point="com.castsoftware.devplugin.querybytype">
+      <castobjecttype
+            class="com.castsoftware.devplugin.querybytype.java.JavaField"
+            id="103" name="Java Field">
+      </castobjecttype>
+   </extension>
+   <extension
+         point="com.castsoftware.devplugin.querybytype">
+      <castobjecttype
+            class="com.castsoftware.devplugin.querybytype.java.JavaConstructor"
+            id="101" name="Java Constructor">
+      </castobjecttype>
+   </extension>
+   <extension
+         point="com.castsoftware.devplugin.querybytype">
+      <castobjecttype
+            class="com.castsoftware.devplugin.querybytype.java.JavaInitializer"
+            id="105" name="Java Initializer">
+      </castobjecttype>
+   </extension>
+   <extension
+         point="com.castsoftware.devplugin.querybytype">
+      <castobjecttype
+            class="com.castsoftware.devplugin.querybytype.java.JavaFile"
+            id="621" name="Java Import">
+      </castobjecttype>
+   </extension>
+   <extension
+         point="com.castsoftware.devplugin.querybytype">
+      <castobjecttype
+            class="com.castsoftware.devplugin.querybytype.java.JavaFile"
+            id="282" name="J2EE Scoped Bean">
+      </castobjecttype>
+   </extension>
+   <extension
+         point="com.castsoftware.devplugin.querybytype">
+      <castobjecttype
+            class="com.castsoftware.devplugin.querybytype.java.JavaClass"
+            id="900" name="Java Enum">
+      </castobjecttype>
+   </extension>
+   <extension
+         point="com.castsoftware.devplugin.querybytype">
+      <castobjecttype
+            class="com.castsoftware.devplugin.querybytype.java.JavaPackage"
+            id="99" name="Java Package">
+      </castobjecttype>
+   </extension>
+
+</plugin>

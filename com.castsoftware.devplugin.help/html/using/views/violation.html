@@ -1,0 +1,248 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="StyleSheet" type="text/css" href="../../../css/cast.css">
+<title>CAST Violation List</title>
+</head>
+
+<body>
+
+<h4>CAST Violation List</h4>
+<hr>
+
+<p>The <b>CAST Violation List</b> simply lists all the violations that have been 
+fetched from the CAST Dashboard Service:</p>
+
+<p><img border="0" src="../images/violations.jpg" width="845" height="376"></p>
+
+<p>The following buttons are available:</p>
+
+<table border="1" cellpadding="5" cellspacing="0" bordercolor="#111111" width="100%" bordercolorlight="#006699" bordercolordark="#FFFFFF" height="130">
+  <tr>
+    <td width="5%" align="center" height="19">
+    <img border="0" src="../images/icon_filter.jpg" width="23" height="21"></td>
+    <td width="95%" height="19">This button launches the <a href="../manually_fetch.html">Fetching 
+    Parameters dialog box</a> in which you can create a filter to fetch only 
+    certain violations from the CAST CAST Dashboard Service.</td>
+  </tr>
+  <tr>
+    <td width="5%" align="center" height="21">
+    <img border="0" src="../images/icon_fetch.jpg" width="23" height="21"></td>
+    <td width="95%" height="21">This button allows you to manually fetch 
+    violations from the CAST Dashboard Service. When clicked, Eclipse will connect to the 
+    CAST Dashboard Service via the web service and fetch the violations.<p>If you have already 
+    fetched the violations, any new violations stored in the CAST Dashboard 
+    Service 
+    (for example following an overnight code analysis and snapshot generation 
+    process) will also be displayed along with any existing violations.</p>
+    <p>Note also that if you have a violation filter defined in the  <a href="../manually_fetch.html">Fetching 
+    Parameters dialog box</a> (accessed using the
+    <img border="0" src="../images/icon_filter.jpg" align="absmiddle" width="23" height="21"> button), 
+    then ONLY violations matching those criteria will be fetched.</td>
+  </tr>
+  <tr>
+    <td width="5%" align="center" height="21">
+    <img border="0" src="../images/icon_viewcode.jpg" width="23" height="21"></td>
+    <td width="95%" height="21">Clicking this button when a violation is 
+    selected in the <b>CAST Violation List</b> that concerns a Java object will 
+    display the corresponding Java object source code at the beginning of the 
+    declaration within the Eclipse environment. See section &quot;<b>Double click to view code</b>&quot; 
+    below for more information about this.<p>The object will also be 
+    highlighted. In addition, the <a href="outline.html">CAST Outline View</a> 
+    will be populated with information regarding the highlighted object 
+    (violated Quality Rule, corresponding metric etc.). Focus will also be placed on the 
+    <a href="matching_artifacts.html">CAST 
+Matching Artifacts view</a>.<p><img border="0" src="../../../images/note.gif" width="10" height="10"> <b>Notes</b></p>
+
+<ul>
+  <li>Note that the display of code and object highlighting is only available with 
+Java code. The violations related to  technologies other than Java will appear in 
+grey to indicate that double-click is not available for this violation.</li>
+  <li>Only the Java files present in your <b>current workspace</b> will be opened 
+automatically. When the source code is not present a message will ask you to add 
+the relevant source code to your workspace.</li>
+</ul>
+
+    </td>
+  </tr>
+  <tr>
+    <td width="5%" align="center" height="21">
+    <img border="0" src="../images/icon_remove.jpg" width="23" height="21"></td>
+    <td width="95%" height="21">This button enables you to remove a violation 
+    from the list. However, the violation is not removed from the CAST Central 
+     
+    and will reappear in the CAST Violation List if you manually fetch the 
+    violations using the
+    <img border="0" src="../images/icon_fetch.jpg" align="absmiddle" width="23" height="21"> button.</td>
+  </tr>
+</table>
+
+<h5>Double click to view code</h5>
+
+<p><b>Double clicking</b> a violation in the CAST Violation List that concerns a 
+Java object (see below for a list of supported object types) will display the corresponding Java object source code at the 
+beginning of the declaration within the Eclipse environment. The object will 
+also be highlighted.
+In 
+addition, the <a href="outline.html">CAST Outline View</a> will be populated 
+with information regarding the highlighted object (violated Quality Rule, 
+corresponding metric etc.). Focus will also be placed on the 
+<a href="matching_artifacts.html">CAST 
+Matching Artifacts view</a>.</p>
+
+<p><img border="0" src="images/view_code.jpg" width="621" height="310"></p>
+
+<p><img border="0" src="../../../images/note.gif" width="10" height="10"> <b>Notes</b></p>
+
+<ul>
+  <li>Note that the display of code and object highlighting is only available with 
+Java code (see below for a list of supported object types). The violations related to  technologies other than Java will appear in 
+grey to indicate that double-click is not available for this violation.</li>
+  <li>Only the Java files present in your <b>current workspace</b> will be opened 
+automatically. When the source code is not present a message will ask you to add 
+the relevant source code to your workspace.</li>
+</ul>
+
+<p><b>Supported object types for code viewing</b></p>
+<p>The following object types are supported for the code viewing feature, i.e. 
+it is only possible to view the source code of the following object types that 
+are in violation:</p>
+<ul>
+  <li>Java Class</li>
+  <li>Java Method</li>
+  <li>Java 
+Interface</li>
+  <li>Java Field</li>
+  <li>Java 
+Constructor</li>
+  <li>Java 
+Initializer</li>
+  <li>Java Import</li>
+  <li>J2EE Scoped 
+Bean</li>
+  <li>Java Enum</li>
+  <li>Java 
+Package</li>
+</ul>
+
+<h5>Column information</h5>
+
+<p>The CAST Violation List includes various different column headings, these are 
+explained in more detail below:</p>
+
+<table border="1" cellpadding="5" cellspacing="0" bordercolor="#111111" width="100%" bordercolorlight="#006699" bordercolordark="#FFFFFF" height="130">
+  <tr>
+    <td width="5%" align="center" height="19">
+    <b>Quality Rule</b></td>
+    <td width="95%" height="19">Displays the name of the CAST Quality Rule that has 
+    been violated.
+    This is a default column and cannot be removed.</td>
+  </tr>
+  <tr>
+    <td width="5%" align="center" height="21">
+    <b>Object</b></td>
+    <td width="95%" height="21">Displays the name of the object that has 
+    violated a CAST Quality Rule.
+    This is a default column and cannot be removed.</td>
+  </tr>
+  <tr>
+    <td width="5%" align="center" height="21">
+    <b>Critical</b></td>
+    <td width="95%" height="21">Indicates whether the violation is critical or 
+    not.</td>
+  </tr>
+  <tr>
+    <td width="5%" align="center" height="21">
+    <b>Application</b></td>
+    <td width="95%" height="21">Displays the name of the parent  application 
+    that the faulting object belongs to.</td>
+  </tr>
+  <tr>
+    <td width="5%" align="center" height="21">
+    <b>Module</b></td>
+    <td width="95%" height="21">Displays the name of the parent module that 
+    the faulting object belongs to.</td>
+  </tr>
+  <tr>
+    <td width="5%" align="center" height="21">
+    <b>Object Type</b></td>
+    <td width="95%" height="21">Displays the type of object, e.g. Java Method, 
+    Java Class etc. that has violated the CAST Quality Rule.</td>
+  </tr>
+  <tr>
+    <td width="5%" align="center" height="21">
+    <b>Comment</b></td>
+    <td width="95%" height="21">Displays the comment applied to the violation. 
+    This can be used as a indication of priority.</td>
+  </tr>
+  <tr>
+    <td width="5%" align="center" height="21">
+    <b>New?</b></td>
+    <td width="95%" height="21">Displays the status of the violation, i.e. is it 
+    new, old etc. The following values are possible:<ul>
+      <li>added</li>
+      <li>deleted</li>
+      <li>updated</li>
+      <li>unchanged</li>
+    </ul>
+    </td>
+  </tr>
+</table>
+
+<h5>Right click shortcut menu</h5>
+
+<p>The CAST Violation List has a right click short cut menu. The following is an 
+explanation of each option:</p>
+
+<table border="1" cellpadding="5" cellspacing="0" bordercolor="#111111" width="100%" bordercolorlight="#006699" bordercolordark="#FFFFFF" height="130">
+  <tr>
+    <td width="5%" align="center" height="19">
+    <b>View Code</b></td>
+    <td width="95%" height="19">This option is available when a violation is 
+    selected in the CAST Violation List that concerns a Java object. The 
+    corresponding Java object source code will be displayed within the Eclipse 
+    environment at the beginning of the declaration. See section &quot;<b>Double click to view code</b>&quot; 
+    above for more information about this.<p>The object will also be 
+    highlighted. In addition, the <a href="outline.html">CAST Outline View</a> 
+    will be populated with information regarding the highlighted object 
+    (violated Quality Rule, corresponding metric etc.). Focus will also be placed on the 
+    <a href="matching_artifacts.html">CAST 
+Matching Artifacts view</a>.</td>
+  </tr>
+  <tr>
+    <td width="5%" align="center" height="21">
+    <b>Remove Violation</b></td>
+    <td width="95%" height="21">This option enables you to remove a violation 
+    from the list. However, the violation is not removed from the CAST Dashboard 
+    Service and will reappear in the CAST Violation List if you manually fetch the 
+    violations using the
+    <img border="0" src="../images/icon_fetch.jpg" align="absmiddle" width="23" height="21"> button.</td>
+  </tr>
+  <tr>
+    <td width="5%" align="center" height="21">
+    <b>Choose Columns</b></td>
+    <td width="95%" height="21">This option enables you to select the columns 
+    that are displayed in the CAST Violation List. The following dialog box will 
+    be displayed enabling you to add or remove columns:<p>
+    <img border="0" src="images/choose_columns.jpg" width="289" height="246"></p>
+    <p>Selecting the checkbox next to a column will display it and clearing the 
+    checkbox will remove the column from the CAST Violation List.</p>
+    <p><img border="0" src="../../../images/note.gif" width="10" height="10"> <b>Notes</b></p>
+    <ul>
+      <li>Note that the <b>Object</b> and <b>Quality Rule</b> columns are not 
+      available. This is because they are default columns and are always 
+      displayed in the CAST Violation List.</li>
+    </ul>
+    </td>
+  </tr>
+</table>
+
+<hr>
+
+<p align="right"><a href="http://www.castsoftware.com" target="_blank">
+<img border="0" src="../../../images/cast.gif" alt="CAST Website" width="174" height="21"></a></p>
+
+</body>
+</html>

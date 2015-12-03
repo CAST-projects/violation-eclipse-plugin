@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension-point id="com.castsoftware.devplugin.core.provider.Registrer" name="com.castsoftware.devplugin.core.provider.Registrer" schema="schema/com.castsoftware.devplugin.core.provider.Registrer.exsd"/>
+
+</plugin>

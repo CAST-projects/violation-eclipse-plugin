@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Violation View Outline Plug-in
+Bundle-SymbolicName: com.castsoftware.devplugin.violationview.outline;singleton:=true
+Bundle-Version: 7.0.22.qualifier
+Bundle-Activator: com.castsoftware.devplugin.violationview.outline.Activator
+Bundle-Vendor: CASTSOFTWARE
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ com.castsoftware.devplugin.violationview,
+ com.castsoftware.devplugin.commoncore,
+ com.castsoftware.devplugin.commonui,
+ org.eclipse.ui.views,
+ com.castsoftware.devplugin.core
+Eclipse-LazyStart: true

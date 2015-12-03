@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="com.castsoftware.devplugin.castoutline.CASTOutlineView">
+      <part
+            id="com.castsoftware.devplugin.violationview.ViolationView">
+      </part>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.adapters">
+      <factory
+            adaptableType="com.castsoftware.devplugin.violationview.ViolationView"
+            class="com.castsoftware.devplugin.violationview.outline.ViolationViewAdapterFactory">
+         <adapter
+               type="org.eclipse.ui.views.contentoutline.IContentOutlinePage">
+         </adapter>
+         <adapter
+               type="com.castsoftware.devplugin.violationview.outline.ViolationOutline">
+         </adapter>
+      </factory>
+   </extension>
+
+</plugin>

@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="StyleSheet" type="text/css" href="../../../css/cast.css">
+<title>Preferences</title>
+</head>
+
+<body>
+
+<h4>Preferences</h4>
+<hr>
+
+<p>To configure the CAST Plug-in for Eclipse, you need to use the <b>Preferences</b> 
+window in Eclipse, which can be accessed by clicking <b>Window</b> &gt; <b>Preferences</b> and 
+then expanding the <b>CAST</b> node.</p>
+
+<p><b>When you have successfully entered and validated the connection 
+parameters, click Apply so that the changes take effect. You may also need to 
+restart Eclipse.</b></p>
+
+<p><img border="0" src="images/preferences.jpg" width="647" height="564"></p>
+
+<p>The various fields need to be filled in as follows:</p>
+
+<table border="1" cellpadding="5" cellspacing="0" bordercolor="#111111" width="100%" bordercolorlight="#006699" bordercolordark="#FFFFFF">
+  <tr>
+    <td width="10%"><b>Web Services URL</b></td>
+    <td width="90%">Please enter the URL of your web services installation (more 
+    about this can be found <a href="../webservice.html">here</a>). For example:<ul>
+      <li><b>http://tomcat:8080/CASTWS</b></li>
+    </ul>
+    </td>
+  </tr>
+  <tr>
+    <td width="10%"><b>Validate Connection</b></td>
+    <td width="90%">Click this button to <b>validate</b> the connection to the web 
+    services installation. If successful the following message will be displayed:<p>
+    <img border="0" src="images/connection_valid.jpg" width="461" height="156"></p>
+    <p>If Eclipse is not able to connect to your web services installation, the following 
+    will be displayed:</p>
+    <p>
+    <img border="0" src="images/connection_invalid.jpg" width="461" height="156"></p>
+    <p>
+    <img border="0" src="../../../images/note.gif" width="10" height="10"> <b>
+    Notes</b></p>
+    <ul>
+      <li>Note that the validation test will check:<ol>
+        <li>that the Web Services URL can be accessed</li><li>that the data in 
+        the CAST Dashboard Service can be accessed using the details in the <b>web.xml </b>
+        file</li>
+      </ol>
+      <p>As such, if you have misconfigured your <b>web.xml</b> file, this test 
+      will &quot;catch&quot; this.</ul>
+    </td>
+  </tr>
+  <tr>
+    <td width="10%"><b>Portal URL</b></td>
+    <td width="90%">Enter the URL of your CAST Dashboard installation. For 
+    example:<ul>
+      <li><b>http://tomcat:8080/CASTAD</b></li>
+    </ul>
+    </td>
+  </tr>
+</table>
+<hr>
+
+<p align="right"><a href="http://www.castsoftware.com" target="_blank">
+<img border="0" src="../../../images/cast.gif" alt="CAST Website" width="174" height="21"></a></p>
+
+</body>
+</html>

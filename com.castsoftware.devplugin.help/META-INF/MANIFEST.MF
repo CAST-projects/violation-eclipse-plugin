@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: CAST Plug-in for Eclipse Help
+Bundle-SymbolicName: com.castsoftware.devplugin.help;singleton:=true
+Bundle-Version: 7.0.22.qualifier
+Bundle-Localization: plugin
+Bundle-Vendor: CAST

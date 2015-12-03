@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Violationview Plug-in
+Bundle-SymbolicName: com.castsoftware.devplugin.violationview;singleton:=true
+Bundle-Version: 7.0.22.qualifier
+Bundle-Activator: com.castsoftware.devplugin.violationview.Activator
+Bundle-Vendor: CASTSOFTWARE
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.databinding,
+ org.eclipse.core.databinding.beans,
+ org.eclipse.jface.databinding,
+ org.eclipse.ui.views,
+ com.castsoftware.devplugin.commoncore,
+ com.castsoftware.devplugin.commonui,
+ com.castsoftware.devplugin.core,
+ com.castsoftware.devplugin.castbrowser
+Eclipse-LazyStart: true
+Export-Package: com.castsoftware.devplugin.violationview

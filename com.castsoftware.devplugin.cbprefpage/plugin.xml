@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="com.castsoftware.devplugin.cbprefpage.CASTPreferenceCenBaseConnection"
+            id="com.castsoftware.devplugin.cbprefpage.CASTPreferenceCenBaseConnection"
+            name="CAST">
+      </page>
+   </extension>
+   <extension
+         id="com.castsoftware.devplugin.cbprefpage.ProviderRegistrer"
+         name="Preference Page Provider Registrer"
+         point="com.castsoftware.devplugin.core.provider.Registrer">
+      <class
+            name="com.castsoftware.devplugin.cbprefpage.ProviderRegistrer">
+      </class>
+   </extension>
+
+</plugin>

@@ -1,0 +1,15 @@
+<project default="deliver" basedir=".">
+	<fileset dir="${basedir}" id="feature_jars">
+		<include name="features/*.jar" />
+	</fileset>
+
+	<fileset dir="${basedir}" id="plugin_jars">
+		<include name="plugins/*.jar" />
+	</fileset>
+
+	<fileset dir="${basedir}" id="jars">
+		<include name="features/*.jar" />
+		<include name="plugins/*.jar" />
+	</fileset>
+
+</project>

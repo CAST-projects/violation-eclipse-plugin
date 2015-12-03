@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension-point id="com.castsoftware.devplugin.violationview" name="ViolationView Extension Point" schema="schema/com.castsoftware.devplugin.violationview.exsd"/>
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            id="com.castsoftware.devplugin"
+            name="CAST">
+      </category>
+      <view
+            category="com.castsoftware.devplugin"
+            class="com.castsoftware.devplugin.violationview.ViolationView"
+            id="com.castsoftware.devplugin.violationview.ViolationView"
+            name="CAST Violation List">
+      </view>
+      <category
+            id="com.castsoftware.devplugin.violationview"
+            name="Sample Category">
+      </category>
+   </extension>
+   <extension
+         point="com.castsoftware.devplugin.castoutline.CASTOutlineView">
+      <part
+            id="com.castsoftware.devplugin.violationview.ViolationView">
+      </part>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.adapters">
+      <factory
+            adaptableType="com.castsoftware.devplugin.violationview.ViolationView"
+            class="com.castsoftware.devplugin.violationview.outline.ViolationViewAdapterFactory">
+         <adapter
+               type="org.eclipse.ui.views.contentoutline.IContentOutlinePage">
+         </adapter>
+         <adapter
+               type="com.castsoftware.devplugin.violationview.outline.ViolationOutline">
+         </adapter>
+      </factory>
+   </extension>
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            adaptable="true"
+            id="com.castsoftware.devplugin.violationview.Violation"
+            objectClass="com.castsoftware.devplugin.core.model.Violation">
+         <action
+               class="com.castsoftware.devplugin.violationview.OpenviolationAction"
+               icon="icons/displayincode.png"
+               id="com.castsoftware.devplugin.violationview.OpenViolation"
+               label="View Code"
+               menubarPath="additions">
+         </action>
+      </objectContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="org.eclipse.jdt.ui.JavaPerspective">
+         <view
+               id="com.castsoftware.devplugin.violationview.ViolationView"
+               relationship="stack"
+               relative="org.eclipse.jdt.ui.JavadocView"
+               visible="true">
+         </view>
+      </perspectiveExtension>
+   </extension>
+
+</plugin>

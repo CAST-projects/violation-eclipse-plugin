@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="StyleSheet" type="text/css" href="../../../css/cast.css">
+<title>CAST Matching Artifacts</title>
+</head>
+
+<body>
+
+<h4>CAST Matching Artifacts</h4>
+<hr>
+
+<p>The <b>CAST Matching Artifacts</b> view indicates all occurrences in the 
+current workspace of the artifact referenced in the Java Violation selected in 
+the <a href="violation.html">CAST Violation List</a>.</p>
+<p>This is particularly useful where you have two similar methods. For example:</p>
+<ul>
+  <li>m(String, String)</li>
+  <li>m(int, int)</li>
+</ul>
+<p>The violation will only indicate that &quot;m&quot; is the method causing the issue and 
+as such it is difficult to know which method is being referred to. The <b>CAST 
+Matching Artifacts</b> view will thus display both methods. You can then double 
+click the artifact to view its source code and make appropriate changes.</p>
+<p><img border="0" src="images/matching_artifacts.jpg" width="362" height="198"></p>
+<p>This view can also help where a method exists in two different files, which 
+may be the case if you are working on two different projects and you have two 
+identical classes. In this case the view will display both methods and the files 
+they belong to.</p>
+<p>The <img border="0" src="../images/icon_viewcode.jpg" align="absmiddle" width="23" height="21"> button will display the selected artifact’s corresponding source code if 
+available in your workspace (identical to double clicking the item in the list).</p>
+<hr>
+
+<p align="right"><a href="http://www.castsoftware.com" target="_blank">
+<img border="0" src="../../../images/cast.gif" alt="CAST Website" width="174" height="21"></a></p>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension-point id="com.castsoftware.devplugin.querybytype" name="querybytype" schema="schema/com.castsoftware.devplugin.querybytype.exsd"/>
+   <extension-point id="com.castsoftware.devplugin.querybytype.notifyresults" name="Results Notification" schema="schema/com.castsoftware.devplugin.querybytype.notifyresults.exsd"/>
+   <extension
+         point="com.castsoftware.devplugin.violationview">
+      <dblClick
+            class="com.castsoftware.devplugin.querybytype.DoubleClickHandler">
+      </dblClick>
+   </extension>
+
+</plugin>

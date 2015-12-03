@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contexts>
+   <context id="CAST_preferences">
+      <topic href="html/install/config/preferences.html" label="CAST Preferences"/>
+   </context>
+   <context id="CAST_violation_list">
+      <topic href="html/using/views/violation.html" label="CAST Violation List"/>
+   </context>
+   <context id="CAST_outline_view">
+      <topic href="html/using/views/outline.html" label="CAST Outline View"/>
+   </context>
+   <context id="CAST_browser">
+      <topic href="html/using/views/browser.html" label="CAST Browser"/>
+   </context>
+   <context id="CAST_artifacts">
+      <topic href="html/using/views/matching_artifacts.html" label="CAST Matching Artifacts"/>
+   </context>
+   <context id="CAST_diagnostic_tree">
+         <topic href="html/using/views/tree_view.html" label="Diagnostic Tree View"/>
+   </context>
+</contexts>

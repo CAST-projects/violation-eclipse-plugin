@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/com.castsoftware.devplugin.feature.core_7.0.22.qualifier.jar" id="com.castsoftware.devplugin.feature.core" version="7.0.22.qualifier">
+      <category name="core"/>
+   </feature>
+   <feature url="features/com.castsoftware.devplugin.feature.java_7.0.22.qualifier.jar" id="com.castsoftware.devplugin.feature.java" version="7.0.22.qualifier">
+      <category name="languages"/>
+   </feature>
+   <category-def name="core" label="Core">
+      <description>
+         This Category contains the required feature to benefit
+   from CAST Plugin For Eclipse. You should select it plus at least one
+   feature in the Language category
+      </description>
+   </category-def>
+   <category-def name="languages" label="Languages support">
+      <description>
+         This category proposes you the different supported development languages
+   for the &quot;CAST Plugin For Eclipse&quot;. You should choose at least one language
+      </description>
+   </category-def>
+</site>

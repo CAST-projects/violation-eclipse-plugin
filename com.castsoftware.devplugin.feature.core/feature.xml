@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.castsoftware.devplugin.feature.core"
+      label="CAST Plugin for Eclipse - Core"
+      version="7.0.22.qualifier"
+      provider-name="CAST">
+
+   <description>
+      This feature allows the user to connect to a CAST Violation database
+and fetch violations from the CAST Action Plan.
+   </description>
+
+   <copyright>
+      Copyright © CAST. All rights reserved.
+   </copyright>
+
+   <license>
+      GENERAL TERMS AND CONDITIONS
+
+CAUTION: PLEASE READ THIS LICENCE CONTRACT CAREFULLY.  THIS IS A LEGAL AGREEMENT BETWEEN YOU AND CAST SA.  ANY USE OF THIS SOFTWARE INDICATES YOUR AGREEMENT WITH THE TERMS OF THIS CONTRACT. IF YOU DO NOT AGREE TO THESE TERMS, RETURN THE COMPONENTS OF THE SOFTWARE PRODUCT (DISKETTES, CD-ROM, DOCUMENTATION…)  TO CAST OR TO THE CAST DISTRIBUTOR FROM WHOM YOU OBTAINED THE SOFTWARE LICENCE.
+
+TO ENSURE YOUR SATISFACTION WITH YOUR SOFTWARE, CAST IS AT YOUR DISPOSAL TO ANSWER ANY QUESTIONS YOU MAY HAVE ABOUT YOUR RIGHTS TO USE THIS PRODUCT.  PLEASE ADDRESS ANY QUESTIONS CONCERNING THIS LICENCE TO YOUR LOCAL CAST OFFICE, OR TO YOUR DISTRIBUTOR. CONTACT INFORMATION LISTED AT WWW.CASTSOFTWARE .COM.
+ 
+1. RECITALS
+
+(i) CAST SA, a French société anonyme whose registered office is situated at 3, rue Marcel Allegot – 92190 Meudon, France, and whose identification number is 379668809 RCS Paris, is the author and owner of a software known as &quot;CAST Application Intelligence Platform&quot; hereinafter referred to as the &quot;Software&quot;.
+(ii) CAST SA has filed the Software with the Agence Pour La Protection des Programmes (APP) (119, rue de Flandres - 75019 PARIS). This organisation provides a right of access to source programs in the circumstances provided for in article 6 of its general regulations reproduced below: 
+&quot;The user of an object program having properly acquired user rights shall have access to source programs as may be provided by law or in the event of default of the author of the program. Such access shall only be authorised after review by the arbitration commission and confers no right of ownership.&quot;
+The said filing with the APP renders the rights of CAST SA in the Software opposable to all nationals of States party to the Bern Convention concerning the protection of literary and artistic works and in particular member states of the European Union and the United States of America.
+(iii) CAST SA has created a network of subsidiaries and distributors responsible for the marketing of the Software and duly authorised in this respect to grant user licenses in respect of the Software.
+(iv) The Grantor, a wholly owned subsidiary of CAST SA or a duly authorized CAST SA distributor has agreed to grant to the Client a non-exclusive user license in respect of the Software upon the terms hereinafter set out.
+(v) The Programs (with all modules or parts thereof), are licensed (not sold) to you on terms set forth below, and, along with any copies,  are the property of CAST SA (the &quot;Licensor&quot;) and are protected by the  copyright, patent, and trademark laws of France, United States and all applicable jurisdictions, and international treaty. The Client  may make one CAST product machine-readable copy for back-up purposes only, provided all notices of  intellectual property rights are concurrently reproduced. The Client cannot: a) Modify, reverse engineer, decompile, translate, disassemble, create derivative works based upon, or copy (except for single back-up copy) the Programs; b) Rent or loan  the Programs to any other person or entity; c) Install or use the Programs on a network, even for the sole purpose of storage; d) Remove, destroy, or render unreadable any proprietary notices, labels, or marks on the program disks, manuals, or accompanying materials; e) Commercially distribute the Programs or otherwise reproduce, publish, or distribute or otherwise use the Programs in any infringing manner; f) Transfer the Programs to any party unless that party has agreed to be bound hereby and Client does not retain any copies of the Programs.
+
+2. Purpose of the Agreement 
+The purpose of this Agreement is the grant to the customer (Client) of a non-exclusive, non-transferable right to use the elements of the Software described in the last commercial proposal duly approved by the Client to be used under the particular conditions stated in the said proposal.  The supply of technical documentation relating to the Software, including the right to make copies thereof, is limited in number to the number of users indicated in the last commercial proposal duly approved by the Client. 
+
+3. Conditions  and applications.
+The provision of the Software, its technical documentation and installation documentation shall be made in consideration of the price and terms of payment set out in the last commercial proposal duly approved by the Client.
+
+The grant of the right to use the Software as provided for in Article 1. above is made to the Client solely in respect of the use of the Software by the Client for its own needs, for analyzing software applications and on the equipment defined in the last commercial proposal approved by the Client. Specifically, unless it is explicitly authorized in the last commercial proposal duly approved by the Client, the Client does not have the right to use the Software to analyze any software application which would not belong to the defined scope, and, more generally, does not have the right to use the Software in order to  provide any service of any sort  to any third party or legal entity not explicitly mentioned in the last proposal duly approved by the Client, and authorized by an executive from the Licensor. In case of absence of definition of geographical, operating, and functional (specific software applications) scope, the scope by default will be reduced to the software applications that are legally owned, or licensed from third party vendors, and regularly managed by the department whose executives approved the last commercial proposal.  
+
+The Grantor shall provide to the Client the number of copies of the Software provided for in the last commercial proposal duly approved by the Client.
+
+The Client undertakes to refrain from any use of the Software not expressly authorised by this Agreement and defined in the last commercial proposal duly approved by the Client. 
+The Client&apos;s right to make back-up copies shall be restricted to one copy only. The said back-up copy shall remain the property of the Grantor and shall include all copyright legends. The Client will not undertake to make any alteration, modification, or addition to the trademarks, commercial names and technical or installation information contained in or delivered with the Software.
+
+4. Delivery, installation and acceptance
+The Software shall be delivered at the place of delivery provided in the last commercial proposal duly approved by the Client. Installation shall be carried out in accordance with the terms set out in the last commercial proposal duly approved by the Client.
+
+The Client shall enjoy a period of ten working days with effect from delivery in order to make any claim in respect thereof. On expiry of the said ten day period and in the absence of any claim preventing acceptance of the Software, the Software shall be deemed to have been accepted and the price payable in respect thereof shall be due in full by the Client.
+
+A &quot;claim preventing acceptance of the Software&quot; shall connote :
+(i) an inability to use the Software on the equipment referred to in the last commercial proposal duly approved by the Client;
+(ii) the substantial non-compliance of the Software with the specifications set out in the user documentation delivered with the Software.
+
+5. Term
+Unless the grant of the right to use the software was explicitly limited in time in the last commercial proposal, or in a separate licence contract, this Agreement shall continue for an indefinite duration.
+
+6. Maintenance
+The terms of maintenance and technical assistance in respect of the Software are set forth in the last commercial proposal duly approved by the Client. Provided that all maintenance dues have been paid in full, the Grantor undertakes to deliver to the Client all new versions, corrections, improvements, and adjustments to the Software and the documentation related to them and to place them at the general disposal of the Grantor&apos;s Clients. Moreover, the Grantor may have recourse to help from the Grantor&apos;s hotline service for all reasonable service regarding the identification and the resolution of difficulties encountered while using the Software. The Grantor undertakes to respond diligently to the requests of the Client. If the indicated problem does not originate with the Software, or if it results from negligence on the part of the Client, the Client will be billed and undertakes to assume all travel expenses, all reasonably justified expenses related to this travel, and the expense of assistance related to the satisfaction of the Client&apos;s request according to the rates in effect at the time.  
+
+Maintenance services do not include new software products sold separately by the Grantor. In case of discontinuance or after a period of suspension of maintenance services by the Client, if the Client wishes to once again benefit from the Grantor&apos;s maintenance services the Client must pay all back maintenance and support dues in full, as if no discontinuance or suspension had taken place. 
+
+Otherwise, the above provisions relating to maintenance may be annulled and replaced by a technical maintenance and support contract signed separately by the parties.  
+
+7. Government restricted rights
+The Programs are provided with restricted rights. Use, duplication or disclosure by any Government may be subject to restrictions as set forth under the laws of the concerned country.
+
+Use, duplication or disclosure by the U.S. Government is subject to restrictions as set forth in subparagraph (c)(1)(ii) of the Department of Defense Regulatory Supplement, Rights in Technical Data and Computer Software Clause (48 CFR 252.277-7013), or Rights in Technical Data and Computer Software and Federal Acquisition Regulation (48 CFR 252.227-140). Proprietor of the compilation, and the contractor/manufacturer, of the Programs is CAST S.A., 3,  rue Marcel Allegot - 92190 MEUDON, France.
+
+Licensor retain all rights not expressly granted herein. Nothing herein constitutes a waiver or election of any rights by Licensor under the French, U.S. Copyright or any other  federal, state, or foreign Copyright law, or convention.
+
+8. Warranty
+
+LICENSOR DOES NOT WARRANT THAT THE FUNCTIONS CONTAINED IN THE PROGRAMS WILL MEET ANY OF CLIENT’S REQUIREMENTS OR THAT THE OPERATION OF THE PROGRAMS WILL BE CONTINUAL OR ERROR FREE. THE PROGRAMS ARE PROVIDED &quot;AS-IS&quot; WITHOUT ANY WARRANTY OF ANY KIND, INCLUDING WITHOUT  LIMITATION, ACCURACY, RELIABILITY, QUALITY, PERFORMANCE, MERCHANTABILITY, COMPLETENESS, OR FITNESS FOR ANY PARTICULAR PURPOSE, AND LICENSOR EXPRESSLY DISCLAIMS ANY WARRANTY WITH RESPECT THERETO AND CLIENT EXPRESSLY ASSUMES ALL OF THE RISKS THEREOF. IN NO EVENT WILL THE LICENSOR BE LIABLE FOR DIRECT, CONSEQUENTIAL, SPECIAL, INCIDENTAL, OR  INDIRECT DAMAGES ARISING OUT OF THE USE OF OR  INABILITY TO USE THE PROGRAMS, FOR ANY LOSS OR DAMAGE  TO ANY PERSON OR PROPERTY AS A RESULT OF THE USE OF THE PROGRAMS, EVEN IF LICENSOR HAS BEEN SPECIFICALLY ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. LICENSOR SHALL NOT BE LIABLE FOR ANY DAMAGES FOR LOST PROFITS OR REVENUE, LOSS OF USE OF DATA, DISKS, OR PROGRAMS, COSTS OF RECOVERING SOFTWARE OR DATA, OR THIRD PARTY CLAIMS. NO SALES PERSON OR ANY OTHER REPRESENTATIVE OF ANY PARTY INVOLVED IN THE  DISTRIBUTION OF THE PROGRAMS IS AUTHORIZED TO MAKE ANY MODIFICATIONS OR ADDITIONS TO THE LIMITED  WARRANTY. 
+
+NOTWITHSTANDING THE PRECEDING PARAGRAPH, THE LIABILITY OF THE LICENSOR TO ANY PARTY SHALL  NOT EXCEED, UNDER ANY CIRCUMSTANCES, THE AMOUNT PAID  FOR THE LICENSE.
+
+THE GRANTOR GIVES NO WARRANTY, EITHER EXPRESS OR IMPLIED, IN RELATION TO THE SOFTWARE OR THE GOODS OR SERVICES TO BE SUPPLIED BY THE GRANTOR, INCLUDING IN PARTICULAR BUT WITHOUT LIMITATION ANY IMPLIED WARRANTY AS TO MERCHANTABLE.
+
+THE GRANTOR GIVES NO WARRANTY IN RELATION TO THE ACHIEVEMENT OF ANY PARTICULAR RESULTS WITH THE SOFTWARE OR SERVICES CONNECTED WITH THE SOFTWARE NOR THAT THE CHARACTERISTICS OF THE SOFTWARE WILL SATISFY THE REQUIREMENTS OF THE CLIENT.
+
+THE PARTIES RECOGNISE THAT SOFTWARE MAY CONTAIN ERRORS AND THAT NOT ALL ERRORS MAY BE ECONOMICALLY CORRECTED, NOR REQUIRE CORRECTION. ACCORDINGLY, THE GRANTOR DOES NOT WARRANT THE UNINTERRUPTED OPERATION OF THE SOFTWARE NOR OPERATION FREE FROM ALL ERROR, NOR THAT ALL OF THE DEFICIENCIES OR ERRORS WHICH MAY BE CONTAINED IN THE SOFTWARE WILL BE CORRECTED.
+
+THE GRANTOR SHALL IN NO CIRCUMSTANCES BE LIABLE HEREUNDER, SAVE WHERE THE MANDATORY APPLICATION OF ANY PROVISION OF LAW SHALL REQUIRE TO THE CONTRARY, IN RESPECT OF DIRECT OR INDIRECT LOSS INCURRED BY THE CLIENT OR IN RESPECT OF COMPLAINTS OR CLAIMS MADE BY ANY THIRD PARTY AGAINST THE CLIENT AND IRRESPECTIVE OF WHETHER THE GRANTOR SHALL HAVE BEEN WARNED OF THE POSSIBLE OCCURRENCE THEREOF.
+
+IN ANY EVENT, THE LIABILITY OF THE GRANTOR IN RESPECT OF ANY LOSS HOWSOEVER ARISING AND IRRESPECTIVE OF THE LEGAL BASIS THEREFORE IS HEREBY EXPRESSLY LIMITED TO THE PRICE PAID BY THE CLIENT TO THE GRANTOR UNDER THE TERMS OF THIS AGREEMENT.
+
+THE GRANTOR SHALL BE BOUND BY AN OBLIGATION OF REASONABLE ENDEAVOURS ONLY HEREUNDER. THE GRANTOR SHALL ONLY BE RESPONSIBLE FOR THE COMPLIANCE OF THE SOFTWARE WITH ITS TECHNICAL DOCUMENTATION, THE CLIENT, IN PARTICULAR, BUT WITHOUT LIMITATION, BEING SOLELY RESPONSIBLE FOR :
+- THE QUALIFICATIONS AND COMPETENCE OF ITS STAFF;
+- THE CARRYING OUT OF ADEQUATE TESTS PRIOR TO THE OPERATION OF EACH VERSION OF THE SOFTWARE IN A CONFIGURATION AS SIMILAR AS REASONABLY POSSIBLE TO THAT TO BE USED BY THE CLIENT;
+- THE USE OF THE SOFTWARE IN ACCORDANCE WITH BEST PRACTICE AND IN PARTICULAR BEST PRACTICE AS REGARDS THE MAKING OF BACK-UP COPIES OF DATA STORED ON ANY SYSTEM USING THE SOFTWARE, OF PROGRAM SOURCES AND OF ANY LOGICAL REPRESENTATION OF THE CLIENT&apos;S PROGRAMS CREATED OR ADAPTED WITH THE AID OF THE SOFTWARE AND THE MAKING OF DAILY BACK-UP COPIES OF DATA BASES SUPPLIED WITH THE SOFTWARE;
+- ANY EXISTING DAMAGE TO, OR ERROR IN THE SYSTEM OR HARDWARE OF THE CLIENT OR ANY VIRUS IN THE CLIENT&apos;S SYSTEM.
+
+9. Ownership
+The grant of the user licence in respect of the Software shall not involve any transfer of ownership. Accordingly, the Client undertakes not to transfer in any way the magnetic media, programs or other elements relating to the Software nor to make any reproduction in whole or in part of the Software in any manner save for the purposes of making the back-up copies as provided for in article 3 above and in respect of which the Client shall take all necessary precautions to avoid illegal dissemination.
+
+The Client hereby expressly undertakes not to transfer (unless the transferee has agreed to be bound hereby and Client does not retain any copies of the Programs), transmit or communicate to any third party, whether with or without consideration, the user licence granted hereunder.
+
+Save where expressly authorised by the Grantor, the Client undertakes not to place the Software or its documentation at the disposal of any third party and to take all steps necessary to ensure that the Client&apos;s staff shall observe this undertaking. In the event of breach by the Client of these undertakings, the Grantor hereby reserves all rights to seek reparation before the relevant Courts.
+
+By way of exception to the foregoing, the Client shall be authorised to decompile the Software without the agreement of the Grantor or the author of the Software as permitted by the law applicable to this Agreement if such decompilation shall be used solely to create an interface between the Software and any other software and shall be authorised only to the extent that the same shall be strictly necessary by reason of the information required not being already accessible.
+
+Should the Client require information necessary to allow the interoperability of the Software, the Client undertakes, prior to referring to a third party for such purposes and undertaking any decompilation, to consult the Grantor with a view to determining whether the necessary information is already readily and rapidly accessible. 
+
+The Client furthermore undertakes to notify the Grantor forthwith of any decompilation carried out, of the place where the same shall occur and the identity of the parties involved.
+
+The rights of the Client in this respect shall in any event be strictly limited to those expressly permitted by law from time to time, any transgression of such limits constituting a copyright infringement.
+
+The Client and the Grantor shall in addition observe all mandatory legal provisions. [By way of example, the use, duplication or dissemination by any American public authorities shall be subject to such restrictions as are set out in this Agreement and in DFARS 227–7202-1 (a) and 227-7202-3 (a) (1995), DFARS 252-227-7013 (c) (1) (ii) (Oct. 1998), FAR 12-212 (a) 1995, FAR 52 227-19 or FAR 52 227-14.]
+
+10. Termination
+Either party may terminate this Agreement in the event of breach by the other party. Such termination shall be effective eight days after formal demand requiring correction of the breach shall have been sent by registered post with return receipt requested without the breach having been so corrected.
+
+In the event of termination of this Agreement howsoever arising, the Client shall :
+- immediately cease using the Software;
+- pay to the Grantor all sums remaining due (whether invoiced or to be invoiced) under this Agreement as at the date of termination;
+- return the Software to the Grantor within eight days from date of termination of this Agreement together with all media, accessories and relevant documentation;
+- supply to the Grantor within 8 days a certificate confirming compliance with the above provisions and warranting in particular that all back-up copies made have been returned to the Grantor, erased or destroyed.
+
+11. Infringement
+The Grantor undertakes to indemnify the Client in the event of any infringement actions brought against the Client on the basis that the Software infringes any copyright of a third party. In this respect the Grantor shall be liable for all damages in respect of which the Client may be found liable by any Court, which finding shall have become definitive and be based exclusively upon a proven infringement by the Grantor or the author of the Software of the patent or copyright of a third party.
+
+The foregoing indemnity shall be subject to the following conditions :
+- the Client shall have informed, by registered post with return receipt requested, the Grantor of its request for indemnification within seventy-two hours of the infringement action ;
+- the Grantor shall have been in a position to ensure the defence of its own interests and those of the Client, for which purposes the Client shall co-operate with the Grantor in such defence and shall supply all useful information or documents.
+
+The foregoing provisions shall determine the liability of the Grantor in relation to infringement of any patent or copyright solely by virtue of the use of the Software.
+
+Such indemnification shall not apply where the infringement shall result from amendment made to the Software by any person other than the Grantor or the author of the Software.
+
+12. Confidentiality
+The parties undertake to observe and ensure the observance by the members of their respective staffs of the strictest confidentiality in relation to all Confidential Information received by each of them in the performance of this Agreement, for so long as this Agreement shall remain in force and for a period of ten years thereafter. The term &quot;Confidential Information&quot; shall mean the Software and all information identified by the party supplying the same as confidential.
+
+Confidential Information shall remain in the sole ownership of the party supplying the same and shall in no circumstances be communicated to any third party without the express agreement of such party.
+
+In particular, the Grantor undertakes to keep confidential all information on the activity of the Client which may be supplied for the purposes of error diagnosis; the Client undertakes to keep confidential all applications, techniques, methodologies and know-how implemented and/or developed by the Grantor for the purposes of the performance of this Agreement, of which the Client may have knowledge.
+
+Confidential Information shall not include information which: (i) is in the public domain other than by virtue of breach of this article, (ii) is communicated by a third party without breach of any confidentiality obligation, (iii) is developed independently by either party without access to Confidential Information of the other party, (iv) is already known to one party at the time of communication by the other.
+
+13. Transfer of this Agreement
+Unless specific transfer rights are explicitly authorized in the last commercial proposal duly approved by the Client, or a separate licence contract, this Agreement is concluded on an intuitu personae basis and the Client undertakes not to assign the same without the prior written agreement of the Grantor.
+
+14. Severability
+If any provision of this Agreement, distinct from the other provisions, shall be declared void or unenforceable by any relevant Court, the other provisions shall not be affected by such judgement and the Agreement shall continue to be performed as closely as possible to the original provisions and the intention of the parties.
+
+15. Entire Agreement
+The parties agree that their relations shall be solely governed by this Agreement, appendices (if any) and the maintenance agreement (if any) to the exclusion of all other agreements, contracts, discussions, negotiations and previous drafts, whether oral or in writing, and all letters, email, telexes or faxes which may have been exchanged prior to the effective date of this Agreement.
+
+The parties shall not be bound by any undertaking, statement or warranty other than those expressly provided for in this Agreement.
+
+16. Applicable Law - Jurisdiction
+Unless it is explicitly authorized in the last commercial proposal, or a separate licence contract, duly approved by the Client, this Agreement is subject to French law . Any dispute relating to the performance or interpretation of this Agreement shall be submitted to the relevant Court within the territorial jurisdiction [of the Paris Court of Appeals / of which the registered office of the Grantor is situated].
+   </license>
+
+   <url>
+      <update label="CAST Eclipse Addons" url="http://www.castsoftware.com/eclipse-addons/update"/>
+      <discovery label="CAST web site" url="http://www.castsoftware.com"/>
+   </url>
+
+   <requires>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.ui.views"/>
+      <import plugin="org.eclipse.osgi.services"/>
+      <import plugin="org.eclipse.osgi.util"/>
+      <import plugin="org.eclipse.jface"/>
+      <import plugin="org.eclipse.core.databinding"/>
+      <import plugin="org.eclipse.core.databinding.beans"/>
+      <import plugin="org.eclipse.jface.databinding"/>
+   </requires>
+
+   <plugin
+         id="com.castsoftware.devplugin.castbrowser"
+         download-size="0"
+         install-size="0"
+         version="7.0.22.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="com.castsoftware.devplugin.castoutline"
+         download-size="0"
+         install-size="0"
+         version="7.0.22.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="com.castsoftware.devplugin.cbprefpage"
+         download-size="0"
+         install-size="0"
+         version="7.0.22.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="com.castsoftware.devplugin.commoncore"
+         download-size="0"
+         install-size="0"
+         version="7.0.22.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="com.castsoftware.devplugin.commonui"
+         download-size="0"
+         install-size="0"
+         version="7.0.22.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="com.castsoftware.devplugin.core"
+         download-size="0"
+         install-size="0"
+         version="7.0.22.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="com.castsoftware.devplugin.querybytype"
+         download-size="0"
+         install-size="0"
+         version="7.0.22.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="com.castsoftware.devplugin.violationview"
+         download-size="0"
+         install-size="0"
+         version="7.0.22.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="com.castsoftware.devplugin.diagtreeview"
+         download-size="0"
+         install-size="0"
+         version="7.0.22.qualifier"
+         unpack="false"/>
+         
+   <plugin
+         id="com.castsoftware.devplugin.help"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+   <plugin
+         id="com.castsoftware.devplugin.codesearchselection"
+         download-size="0"
+         install-size="0"
+         version="7.0.22.qualifier"
+         unpack="false"/>
+
+</feature>
